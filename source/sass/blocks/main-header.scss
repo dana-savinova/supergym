@@ -1,0 +1,22 @@
+.main-header {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 31px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  justify-content: space-between;
+}
+
+.main-header__link {
+  font-size: 26px;
+  line-height: 1em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+
+  color: $white;
+
+  text-decoration: none;
+}
