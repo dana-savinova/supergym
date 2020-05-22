@@ -20,3 +20,20 @@
 
   text-decoration: none;
 }
+
+
+@media (max-width: $desktop-width) {
+  .main-header {
+    width: 768px;
+    padding-top: 41px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .main-header__link {
+    font-size: 24px;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+}

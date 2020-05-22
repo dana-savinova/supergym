@@ -19,7 +19,6 @@
   text-align: right;
 }
 
-
 .hero__wrapper::after {
   content: "";
 
@@ -52,7 +51,6 @@
     -2px 2px $white,
     2px 2px $white;
 }
-
 
 .hero__city {
   margin: 0;
@@ -141,5 +139,44 @@
     &:focus {
       opacity: 0.5;
     }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .hero__title {
+    margin-bottom: 36px;
+
+    font-size: 86px;
+  }
+
+  .hero__city {
+    margin-bottom: 10px;
+
+    font-size: 34px;
+  }
+
+  .hero__wrapper {
+    width: 354px;
+    padding-top: 71px;
+    padding-right: 30px;
+  }
+
+  .hero__wrapper::after {
+    top: 17px;
+    right: -324px;
+
+    width: 324px;
+    height: 390px;
+
+    background-image: url("../img/superman-tablet@1x.jpg");
+  }
+
+  .hero__services {
+    left: 0;
+    top: 202px;
+  }
+
+  .hero__btn {
+    width: 183px;
   }
 }

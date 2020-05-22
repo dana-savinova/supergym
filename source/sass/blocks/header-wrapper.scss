@@ -4,3 +4,10 @@
   color: $white;
   background: radial-gradient(circle at 6% 93%, #003d85, #b80027 50%);
 }
+
+
+@media (max-width: $desktop-width) {
+  .header-wrapper {
+    min-height: 554px;
+  }
+}
