@@ -11,3 +11,9 @@
     min-height: 554px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .header-wrapper {
+    min-height: 491px;
+  }
+}

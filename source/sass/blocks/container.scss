@@ -12,3 +12,12 @@
     padding-left: 45px;
   }
 }
+
+
+@media (max-width: $tablet-width) {
+  .container {
+    width: 320px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
