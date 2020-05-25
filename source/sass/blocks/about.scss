@@ -123,8 +123,11 @@
 
 @media (max-width: $desktop-width) {
   .about {
+    min-width: 768px;
     padding-top: 100px;
+    padding-right: 45px;
     padding-bottom: 100px;
+    padding-left: 45px;
 
     flex-direction: column;
   }
@@ -134,12 +137,76 @@
     width: 100%;
   }
 
+  .about__content {
+    padding-top: 0;
+    padding-right: 88px;
+    padding-left: 88px;
+
+    text-align: center;
+  }
+
   .about__content h2 {
+    margin-bottom: 7px;
+
     font-size: 42px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 34px;
+  }
+
+  .about__text {
+    margin-bottom: 44px;
   }
 
   .about__text p:nth-child(1n+2) {
     display: none;
+  }
+
+  .about__gallery {
+    align-items: center;
+  }
+
+  .about__photo {
+    width: 100%;
+    max-height: 345px;
+    padding: 0;
+
+    background-image: url("../img/hall-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hall-tablet@2x.jpg");
+    }
+  }
+
+  .about__photo img {
+    width: 100%;
+    min-width: 678px;
+    height: 345px;
+
+    visibility: hidden;
+  }
+
+  .about__video-wrapper {
+    max-height: 167px;
+    margin-top: -84px;
+  }
+
+  .about__video {
+    width: 266px;
+    height: 167px;
+  }
+
+  .about__play {
+    width: 73px;
+    height: 73px;
+    margin-top: -39px;
+    margin-left: -37px;
+
+    background-size: 73px 73px;
   }
 }
 
