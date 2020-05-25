@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Фитнес-центр Supergym</title>
+  <title>Фитнес-центр Superabout</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
@@ -24,13 +24,13 @@
     <section class="hero">
       <div class="hero__wrapper">
         <div class="hero__text">
-        <h1>Фитнес центр</h1>
-        <b>Омск</b>
-        <ul class="hero__list hero__services">
-          <li>Тренажёрный зал</li>
-          <li>Групповые занятия</li>
-          <li>Кардио-зона</li>
-        </ul>
+          <h1>Фитнес центр</h1>
+          <b>Омск</b>
+          <ul class="hero__list hero__services">
+            <li>Тренажёрный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
         </div>
         <a class="btn hero__btn" href="#">Купить абонемент</a>
       </div>
@@ -47,5 +47,31 @@
       </ul>
     </section>
   </header>
+  <main>
+    <section class="about">
+      <div class="about__content">
+        <h2>Тренажерный зал</h2>
+        <div class="about__subtitle">
+          <p>Просторный зал площадью 900 кв/м</p>
+        </div>
+        <div class="about__text">
+          <p>Superabout – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+      </div>
+      <div class="about__gallery">
+        <div class="about__img">
+          <!-- 1х: 660px x 401px; 2x: 1320px x 802px -->
+          <img src="img/hall-desktop@1x.jpg" srcset="img/hall-desktop@1x.jpg 1x, img/hall-desktop@2x.jpg 2x" alt="Фото нашего зала" width="660" height="401">
+        </div>
+        <div class="about__video-wrapper">
+          <video class="about__video" poster="img/video-desktop@1x.jpg"></video>
+          <button class="about__play" type="button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
