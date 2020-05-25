@@ -23,7 +23,6 @@
   flex-direction: column;
 }
 
-// superman photo
 .hero__wrapper::after {
   content: "";
 
@@ -44,7 +43,7 @@
   }
 }
 
-.hero__title {
+.hero h1 {
   max-width: 300px;
   margin: 0;
   padding: 0;
@@ -63,7 +62,7 @@
     2px 2px $white;
 }
 
-.hero__city {
+.hero b {
   display: block;
   margin-bottom: 13px;
 
@@ -100,7 +99,7 @@
   display: none;
 }
 
-// social
+// социальные сети - breakpoint от 1200px и выше
 @media (min-width: 1200px) {
   .hero__social {
     display: flex;
@@ -148,13 +147,13 @@
     padding-right: 31px;
   }
 
-  .hero__title {
+  .hero h1 {
     margin-bottom: 36px;
 
     font-size: 86px;
   }
 
-  .hero__city {
+  .hero b {
     margin-bottom: 7px;
 
     font-size: 34px;
@@ -193,13 +192,13 @@
     display: none;
   }
 
-  .hero__title {
+  .hero h1 {
     margin-bottom: 38px;
 
     font-size: 78px;
   }
 
-  .hero__city {
+  .hero b {
     margin-bottom: 12px;
 
     font-size: 28px;

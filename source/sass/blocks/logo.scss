@@ -2,20 +2,20 @@
   display: flex;
 }
 
-.logo__img {
+.logo img {
   width: 89px;
   height: 20px;
 }
 
 @media (max-width: $desktop-width) {
-  .logo__img {
+  .logo img {
     width: 82px;
     height: 19px;
   }
 }
 
 @media (max-width: $tablet-width) {
-  .logo__img {
+  .logo img {
     width: 68px;
     height: 15px;
   }
