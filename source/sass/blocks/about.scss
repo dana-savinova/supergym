@@ -212,11 +212,58 @@
 
 @media (max-width: $tablet-width) {
   .about {
+    min-width: 320px;
     padding-top: 70px;
+    padding-right: 0;
     padding-bottom: 70px;
+    padding-left: 0;
+  }
+
+  .about__content {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    text-align: left;
   }
 
   .about__content h2 {
+    margin-bottom: 4px;
+
     font-size: 32px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 25px;
+  }
+
+  .about__text {
+    margin-bottom: 33px;
+    padding-right: 27px;
+  }
+
+  .about__photo {
+    max-height: 313px;
+
+    background-image: url("../img/hall-mobile@1x.jpg");
+    background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hall-mobile@2x.jpg");
+    }
+  }
+
+  .about__photo img {
+    width: 100%;
+    min-width: 320px;
+    height: 313px;
+  }
+
+  .about__video-wrapper {
+    margin-top: 40px;
+  }
+
+  .about__video {
+    width: 320px;
+    height: 167px;
   }
 }
