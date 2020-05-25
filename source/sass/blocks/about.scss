@@ -76,7 +76,11 @@
 .about__video-wrapper {
   position: relative;
 
+  width: 364px;
+  height: 228px;
   margin-top: -117px;
+
+  background-image: url("../img/video-desktop@1x.jpg");
 }
 
 .about__video-wrapper::before {
@@ -90,6 +94,24 @@
   height: 100%;
 
   background-color: rgba(#14367a, 0.5);
+}
+
+.about__video[poster] {
+  visibility: hidden;
+}
+
+.about__video {
+  width: 364px;
+  height: 228px;
+
+  background-color: transparent;
+  background-image: url("../img/video-desktop@1x.jpg");
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-desktop@2x.jpg");
+  }
 }
 
 .about__play {
@@ -198,6 +220,12 @@
   .about__video {
     width: 266px;
     height: 167px;
+
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 
   .about__play {
@@ -259,11 +287,19 @@
   }
 
   .about__video-wrapper {
+    width: 320px;
+    height: 167px;
     margin-top: 40px;
   }
 
   .about__video {
     width: 320px;
     height: 167px;
+
+    background-image: url("../img/video-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-mobile@2x.jpg");
+    }
   }
 }
