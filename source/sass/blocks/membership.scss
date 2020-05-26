@@ -1,0 +1,171 @@
+.membership {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  color: $main-blue;
+  background-color: $light-grey;
+}
+
+.membership__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.membership h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+
+  text-align: center;
+}
+
+.membership__wrapper {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.membership__toggles {
+  position: relative;
+
+  display: flex;
+  width: 341px;
+  margin: 0;
+  padding: 0;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.membership__toggles-item:not(:first-child) {
+  margin-left: auto;
+}
+
+.membership__toggles::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: rgba($grey, 0.2);
+}
+
+.membership__toggle {
+  position: relative;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 14px;
+
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  color: rgba($light-blue, 0.5);
+  background-color: transparent;
+  border: none;
+
+  outline: none;
+
+  &:hover::after,
+  &:focus::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+    background-color: $border-link-color;
+
+    cursor: pointer;
+  }
+}
+
+.membership__toggle--active::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: $border-link-color;
+}
+
+.membership__item h3 {
+  font-size: 26px;
+  line-height: 1.1em;
+  font-weight: 700;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.membership__terms p {
+  font-size: 16px;
+  line-height: 1.5em;
+
+  color: $light-blue;
+}
+
+.membership__price p {
+  font-size: 50px;
+  line-height: 1.5em;
+  font-weight: 700;
+
+  color: $bright-blue;
+}
+
+@media (max-width: $desktop-width) {
+  .membership {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .membership__container {
+    min-width: 768px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .membership__toggle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .membership {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .membership__container {
+    min-width: 768px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .membership__toggle {
+    font-size: 16px;
+  }
+
+  .membership__item h3 {
+    font-size: 22px;
+  }
+
+  .membership__terms p {
+    font-size: 48px;
+  }
+}
