@@ -116,6 +116,10 @@
   }
 }
 
+.membership__toggle--active {
+  color: $main-blue;
+}
+
 .membership__toggle--active::after {
   content: "";
 
@@ -247,6 +251,9 @@
   height: 42px;
 
   background-image: url("../img/rub-icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   transform: translateY(-46%);
 }
 
@@ -335,21 +342,79 @@
     padding-bottom: 70px;
   }
 
+  .membership::after {
+    display: none;
+  }
+
+  .membership h2 {
+    margin-bottom: 20px;
+  }
+
   .membership__container {
-    min-width: 768px;
+    min-width: 320px;
     padding-right: 15px;
     padding-left: 15px;
   }
 
+  .membership__toggles {
+    width: 100%;
+    margin-bottom: 33px;
+  }
+
   .membership__toggle {
+    padding-bottom: 15px;
+
     font-size: 16px;
+  }
+
+  .membership__toggle--active::after {
+    width: 113.2%;
+  }
+
+  .membership__item {
+    width: 100%;
+    min-height: 384px;
+    margin-bottom: 35px;
+    padding-top: 44px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 47px;
   }
 
   .membership__item h3 {
     font-size: 22px;
   }
 
+  .membership__terms {
+    margin-bottom: 53px;
+  }
+
   .membership__terms p {
+    font-size: 16px;
+  }
+
+  .membership__price {
+    margin-bottom: 31px;
+  }
+
+  .membership__price p {
+    padding-right: 31px;
+
     font-size: 48px;
+  }
+
+  .membership__price p::before {
+    font-size: 80px;
+  }
+
+  .membership__price p::after {
+    width: 24px;
+    height: 33px;
+
+    transform: translate(17%, -45%);
+  }
+
+  .membership__btn {
+    width: 100%;
   }
 }
