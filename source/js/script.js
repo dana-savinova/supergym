@@ -1,15 +1,24 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+(function () {
+  // Слайдер абонементов
+  var membershipBlock = document.querySelector('.membership');
 
-pageHeader.classList.remove('page-header--nojs');
+  if (membershipBlock) {
+    var allMembershipTabs = Array.prototype.slice.call(membershipBlock.querySelectorAll('.membership__toggle'));
+    var membershipSlide = membershipBlock.querySelectorAll('.membership__rates');
+    var membershipTab = membershipBlock.querySelectorAll('.membership__toggle');
+    allMembershipTabs.forEach(function (button, n) {
+      function onMembershipBtnClick() {
+        for (var i = 0; i < membershipSlide.length; i++) {
+          membershipSlide[i].classList.remove('membership__rates--active');
+          allMembershipTabs[i].classList.remove('membership__toggle--active');
+        }
+        membershipTab[n].classList.add('membership__toggle--active');
+        membershipSlide[n].classList.add('membership__rates--active');
+      }
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+      button.addEventListener('click', onMembershipBtnClick);
+      button.addEventListener('focus', onMembershipBtnClick);
+    });
   }
-});
+})();

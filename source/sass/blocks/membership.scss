@@ -1,5 +1,6 @@
 .membership {
   position: relative;
+  z-index: 1;
 
   padding-top: 120px;
   padding-bottom: 111px;
@@ -12,6 +13,7 @@
   content: "";
 
   position: absolute;
+  z-index: -1;
   right: 0;
   bottom: -152px;
 
@@ -276,7 +278,20 @@
 @media (max-width: $desktop-width) {
   .membership {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 59px;
+  }
+
+  .membership::after {
+    bottom: -126px;
+
+    width: 347px;
+    height: 444px;
+
+    background-image: url("../img/disk-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/disk-tablet@2x.png");
+    }
   }
 
   .membership__container {
@@ -285,8 +300,32 @@
     padding-left: 45px;
   }
 
+  .membership h2 {
+    margin-bottom: 28px;
+  }
+
+  .membership__toggles {
+    width: 48.96%;
+    margin-bottom: 44px;
+  }
+
   .membership__toggle {
     font-size: 18px;
+  }
+
+  .membership__rates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership__item {
+    width: 65.19%;
+    margin-bottom: 40px;
+    padding-bottom: 60px;
+  }
+
+  .membership__btn {
+    width: 51.76%;
   }
 }
 
