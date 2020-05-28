@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-  // Слайдер абонементов
+  // Слайдер серивисов
   var membershipBlock = document.querySelector('.membership');
 
   if (membershipBlock) {
@@ -18,6 +18,7 @@
       }
 
       button.addEventListener('click', onMembershipBtnClick);
+
       button.addEventListener('focus', onMembershipBtnClick);
     });
   }
