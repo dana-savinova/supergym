@@ -4,9 +4,10 @@
   var membershipBlock = document.querySelector('.membership');
 
   if (membershipBlock) {
-    var allMembershipTabs = Array.prototype.slice.call(membershipBlock.querySelectorAll('.membership__toggle'));
-    var membershipSlide = membershipBlock.querySelectorAll('.membership__rates');
     var membershipTab = membershipBlock.querySelectorAll('.membership__toggle');
+    var membershipSlide = membershipBlock.querySelectorAll('.membership__rates');
+    var allMembershipTabs = Array.prototype.slice.call(membershipTab);
+
     allMembershipTabs.forEach(function (button, n) {
       function onMembershipBtnClick() {
         for (var i = 0; i < membershipSlide.length; i++) {

@@ -175,7 +175,7 @@
 
   .promo__info,
   .promo__desc {
-    max-width: 343px;
+    width: 202px;
     margin: 0 auto;
     padding: 0;
   }
@@ -261,6 +261,11 @@
       background-image: url("../img/crossfit-desktop@2x.jpg");
     }
   }
+
+  // .promo__info,
+  // .promo__desc {
+  //   width: 202px;
+  // }
 
   .promo__wrapper {
     width: 100%;
