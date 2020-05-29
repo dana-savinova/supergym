@@ -1,17 +1,81 @@
 .trainers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.trainers__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 120px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.trainers h2 {
+  margin-bottom: 34px;
 }
 
 .trainers__slider {
+  position: relative;
+
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.trainers__slider-wrapper {
   width: 1160px;
+}
+
+.trainers__wrapper {
+  max-width: 1160px;
+  padding: 0;
 }
 
 .trainers__slide {
   display: flex;
+  max-width: 260px;
 
   text-align: center;
+}
+
+.trainers__btn {
+  position: absolute;
+  top: 52%;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  border: none;
+
+  background-image: url("../img/arrow-btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  &--prev {
+    left: -56px;
+    transform: rotate(180deg);
+  }
+
+  &--next {
+    right: -56px;
+  }
+
+  // for resolution from 1200px to 1271px
+  @media (max-width: 1271px) and (min-width: 1200px) {
+    &--prev {
+      left: -20px;
+    }
+
+    &--next {
+      right: -20px;
+    }
+  }
+}
+
+.trainers__btn::after {
+  display: none;
 }
 
 @media (max-width: $desktop-width) {

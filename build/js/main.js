@@ -32,7 +32,7 @@
   var sliderTrainersBlock = document.querySelector('.trainers__slider');
 
   if (sliderTrainersBlock) {
-    sliderTrainersBlock = new Swiper('.trainers__slider', {
+    sliderTrainersBlock = new Swiper('.trainers__slider-wrapper', {
       loop: true,
       slidesPerView: 4,
       slidesPerGroup: 4,
