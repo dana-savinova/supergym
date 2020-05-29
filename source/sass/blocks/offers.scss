@@ -204,9 +204,6 @@
     width: 58.85%;
 
     background-image: url("../img/promo-bg-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/promo-bg-tablet@2x.jpg");
@@ -255,5 +252,90 @@
 @media (max-width: $tablet-width) {
   .offers {
     min-width: 320px;
+    padding-top: 70px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .offers h2 {
+    margin-bottom: 42px;
+  }
+
+  .offers__list {
+    flex-direction: column;
+  }
+
+  .offers__special {
+    min-height: 290px;
+    margin-bottom: 30px;
+    padding-bottom: 345px;
+
+    text-align: center;
+  }
+
+  .offers__special h3 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .offers__special .offers__text {
+    margin-bottom: 25px;
+  }
+
+  .offers__special p {
+    padding: 0;
+  }
+
+  .offers__special-wrap {
+    width: 100%;
+  }
+
+  .offers__special::after {
+    top: auto;
+    bottom: 0;
+
+    width: 100%;
+    height: 299px;
+
+    background-image: url("../img/promo-bg-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-bg-mobile@1x.jpg");
+    }
+  }
+
+  .offers__item {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 28px;
+    padding-right: 10px;
+    padding-bottom: 41px;
+    padding-left: 10px;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .offers__item h3 {
+    margin: 0;
+  }
+
+  .offers__item p {
+    padding: 0;
+  }
+
+  .offers__list .offers__text {
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 17px;
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .offers__text--small {
+    margin: 0;
+    padding: 0;
   }
 }
