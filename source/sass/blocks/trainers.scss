@@ -79,13 +79,37 @@
 }
 
 @media (max-width: $desktop-width) {
-  .trainers__slider {
-    width: 768px;
+  .trainers {
+    padding-top: 100px;
   }
 
-  .trainers {
+  .trainers h2 {
+    margin-bottom: 23px;
+
+    text-align: center;
+  }
+
+  .trainers__container {
     min-width: 768px;
-    padding-top: 100px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .trainers__slider {
+    max-width: 566px;
+  }
+
+  .trainers__slider-wrapper {
+    width: 566px;
+  }
+
+  .trainers__wrapper {
+    max-width: 566px;
+  }
+
+  .trainers__slide {
+    width: 268px;
+    max-width: 268px;
   }
 }
 
