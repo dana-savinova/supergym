@@ -74,7 +74,7 @@
   text-align: center;
 }
 
-.advatages__num {
+.advantages__num {
   position: absolute;
   top: auto;
   left: 1px;
@@ -89,17 +89,17 @@
   line-height: 1.5em;
 }
 
-.advatages__num strong {
+.advantages__num strong {
   font-weight: 400;
 }
 
-.advatages__num span {
+.advantages__num span {
   font-size: 71px;
   line-height: 1.5em;
   font-weight: 700;
 }
 
-.advatages__num::before {
+.advantages__num::before {
   content: "";
 
   position: absolute;
@@ -113,19 +113,19 @@
   background-size: contain;
 }
 
-.advantages__item--size .advatages__num::before {
+.advantages__item--size .advantages__num::before {
   background-image: url("../img/icon-900.svg");
 }
 
-.advantages__item--parking .advatages__num::before {
+.advantages__item--parking .advantages__num::before {
   background-image: url("../img/icon-70.svg");
 }
 
-.advantages__item--capacity .advatages__num::before {
+.advantages__item--capacity .advantages__num::before {
   background-image: url("../img/icon-350.svg");
 }
 
-.advantages__item--trainers .advatages__num::before {
+.advantages__item--trainers .advantages__num::before {
   background-image: url("../img/icon-5.svg");
 }
 
@@ -196,17 +196,17 @@
     transform: translate(-120px);
   }
 
-  .advantages__row--top .advatages__num {
+  .advantages__row--top .advantages__num {
     top: 2px;
     left: 1px;
   }
 
-  .advantages__item--size .advatages__num {
+  .advantages__item--size .advantages__num {
     top: 3px;
     left: 27px;
   }
 
-  .advantages__item--capacity .advatages__num {
+  .advantages__item--capacity .advantages__num {
     bottom: -2px;
     left: 20px;
   }
@@ -259,12 +259,12 @@
     padding-right: 0;
   }
 
-  .advatages__num {
+  .advantages__num {
     bottom: 0;
     left: -1px;
   }
 
-  .advatages__num::before {
+  .advantages__num::before {
     top: 14px;
     left: 2px;
 
@@ -361,7 +361,7 @@
     width: 74.13%;
   }
 
-  .advatages__num {
+  .advantages__num {
     position: relative;
 
     width: 90px;
@@ -374,7 +374,7 @@
     text-align: center;
   }
 
-  .advatages__num::before {
+  .advantages__num::before {
     top: 0;
     left: 5px;
 
@@ -382,7 +382,7 @@
     background-position: center;
   }
 
-  .advatages__num strong {
+  .advantages__num strong {
     margin-left: 10px;
   }
 }
