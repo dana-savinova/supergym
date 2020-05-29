@@ -149,7 +149,27 @@
   }
 
   .trainer-card__photo {
-    width: 260px;
-    height: 294px;
+    width: 226px;
+    height: 274px;
+  }
+
+  .trainer-card__photo img {
+    width: auto;
+    height: 274px;
+  }
+
+  .trainer-card__info {
+    width: 226px;
+    height: 274px;
+    max-height: 274px;
+  }
+
+  .trainer-card__info b {
+    margin-top: 41px;
+  }
+
+  .trainer-card__info b,
+  .trainer-card__info p {
+    margin-right: 0;
   }
 }
