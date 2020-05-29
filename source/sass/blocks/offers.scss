@@ -46,7 +46,7 @@
   background-image: url("../img/promo-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/promo-bg-desktop@2x.jpg");
@@ -80,7 +80,7 @@
 }
 
 .offers__special p {
-  padding-right: 33px;
+  padding-right: 34px;
 
   font-size: 18px;
   line-height: 1.4em;
@@ -178,6 +178,77 @@
 @media (max-width: $desktop-width) {
   .offers {
     min-width: 768px;
+    padding-top: 101px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .offers h2 {
+    margin-bottom: 39px;
+  }
+
+  .offers__wrapper {
+    flex-direction: column;
+  }
+
+  .offers__special {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .offers__special-wrap {
+    width: 40.15%;
+  }
+
+  .offers__special::after {
+    width: 58.85%;
+
+    background-image: url("../img/promo-bg-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-bg-tablet@2x.jpg");
+    }
+  }
+
+  .offers__list {
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+  }
+
+  .offers__item {
+    display: flex;
+    width: 47.79%;
+    padding-bottom: 31px;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .offers__item:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .offers__text {
+    margin-bottom: 41px;
+  }
+
+  .offers__text--small {
+    padding-right: 45px;
+  }
+
+  .offers__link {
+    margin-top: auto;
+  }
+
+  .offers__link::after {
+    bottom: -3px;
   }
 }
 
