@@ -19,8 +19,6 @@
       }
 
       button.addEventListener('click', onMembershipBtnClick);
-
-      button.addEventListener('focus', onMembershipBtnClick);
     });
   }
 })();
