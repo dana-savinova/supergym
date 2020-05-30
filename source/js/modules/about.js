@@ -1,6 +1,5 @@
 'use strict';
 (function () {
-  // Слайдер серивисов
   var membershipBlock = document.querySelector('.membership');
 
   if (membershipBlock) {

@@ -91,7 +91,6 @@
   font-size: 18px;
   line-height: 1.5em;
   font-weight: 400;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .promo__date dt::after {
@@ -117,7 +116,6 @@
   font-size: 40px;
   line-height: 1.5em;
   font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .promo__month {
@@ -144,7 +142,6 @@
   font-size: 18px;
   line-height: 1.5em;
   font-weight: 400;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .promo__btn {
@@ -161,7 +158,6 @@
   }
 
   .promo__wrapper {
-    // width: 292px;
     width: 43.07%;
     padding-top: 46px;
     padding-right: 45px;
@@ -261,11 +257,6 @@
       background-image: url("../img/crossfit-desktop@2x.jpg");
     }
   }
-
-  // .promo__info,
-  // .promo__desc {
-  //   width: 202px;
-  // }
 
   .promo__wrapper {
     width: 100%;
