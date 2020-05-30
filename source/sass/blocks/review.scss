@@ -1,0 +1,53 @@
+.review {
+  display: flex;
+  padding-top: 53px;
+  padding-right: 60px;
+  padding-bottom: 58px;
+  padding-left: 62px;
+
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+}
+
+.review__text {
+  display: flex;
+  width: 330px;
+  margin: 0;
+  padding: 0;
+
+  flex-direction: column;
+}
+
+.review__text p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+.review__text cite {
+  margin-bottom: 13px;
+
+  order: -1;
+
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.review__avatar {
+  max-width: 80px;
+  margin-top: 10px;
+  margin-right: 28px;
+}
+
+.review__avatar img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 50%;
+}
