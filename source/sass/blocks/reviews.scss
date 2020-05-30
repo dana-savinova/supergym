@@ -32,7 +32,9 @@
 }
 
 .reviews__item {
+  display: flex;
   width: 560px;
+  height: auto;
 
   color: $white;
   background-color: $blue;
