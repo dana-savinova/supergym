@@ -134,7 +134,35 @@
 
 
 @media (max-width: $tablet-width) {
+  .contacts {
+    padding: 0;
+    padding-top: 71px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+  }
+
+  .contacts h2 {
+    margin-bottom: 32px;
+  }
+
   .contacts__wrapper {
     flex-direction: column;
+  }
+
+  .contacts__list {
+    width: 100%;
+  }
+
+  .contacts__item dt {
+    margin-bottom: 5px;
+  }
+
+  .contacts__list:nth-child(2n) {
+    padding-left: 0;
+  }
+
+  .contacts__list:nth-child(2n)::after {
+    display: none;
   }
 }
