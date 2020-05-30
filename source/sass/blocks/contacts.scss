@@ -1,0 +1,12 @@
+.contacts {
+  width: 50%;
+  padding-top: 70px;
+  padding-left: 120px;
+}
+
+
+@media (max-width: $desktop-width) {
+  .contacts {
+    width: 100%;
+  }
+}

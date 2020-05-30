@@ -50,7 +50,7 @@
       </ul>
     </section>
   </header>
-  <main>
+  <main class="site-content">
     <section class="about site-section">
       <div class="about__content">
         <h2>Тренажерный зал</h2>
@@ -496,9 +496,86 @@
           </button>
         </div>
       </div>
-
     </section>
+    <div class="site-content__row">
+      <div class="site-content__wrapper">
+        <section class="user-form site-section">
+          <div class="user-form__wrapper">
+            <h2>Бесплатное занятие</h2>
+            <form class="user-form__form " method="post" action="https://echo.htmlacademy.ru">
+              <ul class="user-form__list">
+                <li class="user-form__item">
+                  <label class="visually-hidden" for="user-name">Имя</label>
+                  <input type="text" name="user-name" id="user-name" placeholder="Имя" required="">
+                </li>
+                <li class="user-form__item">
+                  <label class="visually-hidden" for="user-phone">Телефон</label>
+                  <input type="tel" name="user-phone" id="user-phone" pattern="\+7 \d{3} \d{3} \d{2} \d{2}" placeholder="Телефон" required="">
+                </li>
+              </ul>
+              <button class="user-form__btn btn" type="submit" name="button">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts site-section">
+          <div>
+            <h2>Контакты</h2>
+            <dl>
+              <dt>Адрес:</dt>
+              <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+              <dt>График работы:</dt>
+              <dd>Пн-Вс: с 8:00 до 22:00</dd>
+            </dl>
+            <dl>
+              <dt>Телефон:</dt>
+              <dd>
+                <a href="tel:+78005555555">8-800-555-55-55</a>
+              </dd>
+              <dt>Email:</dt>
+              <dd>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </dd>
+            </dl>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
+  <footer class="page-footer">
+    <ul class="page-footer__nav">
+      <li class="page-footer__item">
+        <a class="page-footer__logo logo">
+          <img src="img/logo.svg" width="89" height="20" alt="Логотип">
+        </a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#">Услуги</a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#">Абонементы</a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#">Акции</a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#">Тренеры</a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#">Расписание</a>
+      </li>
+    </ul>
+    <ul class="page-footer__social">
+      <li>
+        <a class="" href="#" aria-label="Мы в Фейсбук">Фейсбук</a>
+      </li>
+      <li>
+        <a class="" href="#" aria-label="Мы в Вконтакте">Вконакте</a>
+      </li>
+      <li>
+        <a class="" href="#" aria-label="Мы в Инстаграм">Инстаграм</a>
+      </li>
+    </ul>
+  </footer>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 
