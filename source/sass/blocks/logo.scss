@@ -7,15 +7,20 @@
   height: 20px;
 }
 
+.logo svg {
+  width: 89px;
+  height: 20px;
+}
+
 @media (max-width: $desktop-width) {
-  .logo img {
+  .logo svg {
     width: 82px;
     height: 19px;
   }
 }
 
 @media (max-width: $tablet-width) {
-  .logo img {
+  .logo svg {
     width: 68px;
     height: 15px;
   }
