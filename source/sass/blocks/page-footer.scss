@@ -94,7 +94,7 @@
   fill: $white;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .page-footer__wrapper {
     min-width: 768px;
     padding-right: 45px;
@@ -124,7 +124,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .page-footer {
     padding-top: 46px;
     padding-bottom: 50px;

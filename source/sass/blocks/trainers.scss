@@ -64,7 +64,7 @@
   }
 
   // for resolution from 1200px to 1271px
-  @media (max-width: 1271px) and (min-width: 1200px) {
+  @media (max-width: 1271px) and ($desktop-widthpx) {
     &--prev {
       left: -20px;
     }
@@ -79,7 +79,7 @@
   display: none;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .trainers {
     padding-top: 100px;
     padding-bottom: 84px;
@@ -116,7 +116,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .trainers {
     padding-top: 70px;
     padding-bottom: 70px;

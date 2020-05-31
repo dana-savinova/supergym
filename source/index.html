@@ -18,15 +18,15 @@
   <div style="display:none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
-  <header class="main-header">
-    <div class="main-header__top">
-      <a class="main-header__logo logo">
+  <header class="page-header">
+    <div class="page-header__top">
+      <a class="page-header__logo logo" aria-label="Логотип">
         <svg width="89" height="20">
           <use xlink:href="#icon-logo"></use>
         </svg>
       </a>
-      <nav class="main-header__nav">
-        <a class="main-header__link" href="tel:+78005555555">8-800-555-55-55</a>
+      <nav class="page-header__nav">
+        <a class="page-header__link" href="tel:+78005555555" aria-label="Позвоните нам">8-800-555-55-55</a>
       </nav>
     </div>
     <section class="hero">
@@ -56,7 +56,7 @@
     </section>
   </header>
   <main class="site-content">
-    <section class="about site-section">
+    <section class="about site-content__section">
       <div class="about__content">
         <h2>Тренажерный зал</h2>
         <div class="about__subtitle">
@@ -69,7 +69,7 @@
       </div>
       <div class="about__gallery">
         <div class="about__photo">
-          <!-- 1х: 660px x 401px; 2x: 1320px x 802px -->
+          <!-- 1х: 660px*401px; 2x: 1320px*802px -->
           <img src="img/hall-desktop@1x.jpg" srcset="img/hall-desktop@1x.jpg 1x, img/hall-desktop@2x.jpg 2x" alt="Фото нашего зала" width="660" height="401">
         </div>
         <div class="about__video-wrapper">
@@ -80,7 +80,7 @@
         </div>
       </div>
     </section>
-    <section class="membership site-section" id="membership">
+    <section class="membership site-content__section" id="membership">
       <div class="membership__container">
         <h2>Абонементы</h2>
         <div class="membership__wrapper">
@@ -223,7 +223,7 @@
         <a class="btn promo__btn" href="crossfit-application.html" target="_blank">Заполнить заявку</a>
       </div>
     </section>
-    <section class="trainers site-section">
+    <section class="trainers site-content__section">
       <div class="trainers__container">
         <h2>Тренеры</h2>
       </div>
@@ -234,7 +234,7 @@
               <article class="trainer-card">
                 <h3>Анна Павлова</h3>
                 <div class="trainer-card__photo">
-                  <!-- 1х: 260px x 294px; 2x: 520px x 588px -->
+                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/trainers/anna@1x.jpg" alt="фото Анна Павлова" width="260" height="294"
                   srcset="img/trainers/anna@1x.jpg 1x, img/trainers/anna@2x.jpg 2x">
                 </div>
@@ -253,7 +253,7 @@
               <article class="trainer-card">
                 <h3>Алексей Лавров</h3>
                 <div class="trainer-card__photo">
-                  <!-- 1х: 260px x 294px; 2x: 520px x 588px -->
+                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/trainers/lavrov@1x.jpg" alt="фото Алексей Лавров" width="260" height="294"
                   srcset="img/trainers/lavrov@1x.jpg 1x, img/trainers/lavrov@2x.jpg 2x">
                 </div>
@@ -272,7 +272,7 @@
               <article class="trainer-card">
                 <h3>Александр Пашков</h3>
                 <div class="trainer-card__photo">
-                  <!-- 1х: 260px x 294px; 2x: 520px x 588px -->
+                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/trainers/pashkov@1x.jpg" alt="фото Александр Пашков" width="260" height="294"
                   srcset="img/trainers/pashkov@1x.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
                 </div>
@@ -291,7 +291,7 @@
               <article class="trainer-card">
                 <h3>Мария Кетова</h3>
                 <div class="trainer-card__photo">
-                  <!-- 1х: 260px x 294px; 2x: 520px x 588px -->
+                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/trainers/ketova@1x.jpg" alt="фото Мария Кетова" width="260" height="294"
                   srcset="img/trainers/ketova@1x.jpg 1x, img/trainers/ketova@2x.jpg 2x">
                 </div>
@@ -310,7 +310,7 @@
               <article class="trainer-card">
                 <h3>Анна Павлова</h3>
                 <div class="trainer-card__photo">
-                  <!-- 1х: 260px x 294px; 2x: 520px x 588px -->
+                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/trainers/anna@1x.jpg" alt="фото Анна Павлова" width="260" height="294"
                   srcset="img/trainers/anna@1x.jpg 1x, img/trainers/anna@2x.jpg 2x">
                 </div>
@@ -329,7 +329,7 @@
               <article class="trainer-card">
                 <h3>Алексей Лавров</h3>
                 <div class="trainer-card__photo">
-                  <!-- 1х: 260px x 294px; 2x: 520px x 588px -->
+                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/trainers/lavrov@1x.jpg" alt="фото Алексей Лавров" width="260" height="294"
                   srcset="img/trainers/lavrov@1x.jpg 1x, img/trainers/lavrov@2x.jpg 2x">
                 </div>
@@ -348,7 +348,7 @@
               <article class="trainer-card">
                 <h3>Александр Пашков</h3>
                 <div class="trainer-card__photo">
-                  <!-- 1х: 260px x 294px; 2x: 520px x 588px -->
+                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/trainers/pashkov@1x.jpg" alt="фото Александр Пашков" width="260" height="294"
                   srcset="img/trainers/pashkov@1x.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
                 </div>
@@ -367,7 +367,7 @@
               <article class="trainer-card">
                 <h3>Мария Кетова</h3>
                 <div class="trainer-card__photo">
-                  <!-- 1х: 260px x 294px; 2x: 520px x 588px -->
+                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/trainers/ketova@1x.jpg" alt="фото Мария Кетова" width="260" height="294"
                   srcset="img/trainers/ketova@1x.jpg 1x, img/trainers/ketova@2x.jpg 2x">
                 </div>
@@ -394,7 +394,7 @@
         </div>
       </div>
     </section>
-    <section class="advantages site-section">
+    <section class="advantages site-content__section">
       <div class="advantages__container">
         <h2>Наши преимущества</h2>
         <div class="advantages__wrapper">
@@ -447,7 +447,7 @@
         </div>
       </div>
     </section>
-    <section class="offers site-section">
+    <section class="offers site-content__section">
       <h2>Акции</h2>
       <div class="offers__wrapper">
         <div class="offers__special">
@@ -477,7 +477,7 @@
         </ul>
       </div>
     </section>
-    <section class="site-section reviews">
+    <section class="site-content__section reviews">
       <h2>Отзывы</h2>
       <div class="reviews__slider">
         <div class="reviews__wrapper swiper-container">
@@ -524,7 +524,7 @@
     </section>
     <div class="site-content__row">
       <div class="site-content__wrapper">
-        <section class="user-form site-section">
+        <section class="user-form site-content__section">
           <div class="user-form__wrapper">
             <h2>Бесплатное занятие</h2>
             <form class="user-form__form "method="post" action="https://echo.htmlacademy.ru">
@@ -542,7 +542,7 @@
             </form>
           </div>
         </section>
-        <section class="contacts site-section">
+        <section class="contacts site-content__section">
           <h2>Контакты</h2>
           <div class="contacts__wrapper">
             <dl class="contacts__list">
@@ -578,7 +578,7 @@
     <div class="page-footer__wrapper">
       <ul class="page-footer__nav">
         <li class="page-footer__item page-footer__item--logo">
-          <a class="page-footer__logo logo">
+          <a class="page-footer__logo logo" aria-label="Логотип">
             <svg width="89" height="20">
               <use xlink:href="#icon-logo"></use>
             </svg>
@@ -602,21 +602,21 @@
       </ul>
       <ul class="page-footer__social">
         <li>
-          <a class="page-footer__link"  href="#" aria-label="Мы в Фейсбук">
+          <a class="page-footer__link"  href="#" aria-label="Мы в Вконтакте">
             <svg class="page-footer__icon page-footer__icon--vk" width="24" height="13">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a class="page-footer__link" href="#" aria-label="Мы в Вконтакте">
+          <a class="page-footer__link" href="#" aria-label="Мы в Инстаграм">
             <svg class="page-footer__icon page-footer__icon--insta" width="24" height="24">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a class="page-footer__link" href="#" aria-label="Мы в Инстаграм">
+          <a class="page-footer__link" href="#" aria-label="Мы в Фейсбук">
             <svg class="page-footer__icon page-footer__icon--fb" width="12" height="24">
               <use xlink:href="#icon-facebook"></use>
             </svg>

@@ -37,7 +37,6 @@
   font-size: 18px;
   line-height: 1.5em;
   font-weight: 400;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .about__text p {
@@ -137,7 +136,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .about {
     min-width: 768px;
     padding-top: 100px;
@@ -231,7 +230,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .about {
     min-width: 320px;
     padding-top: 70px;

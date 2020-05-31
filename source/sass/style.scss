@@ -3,10 +3,10 @@
 @import "variables.scss";
 @import "main.scss";
 @import "vendor/swiper.scss";
-@import "blocks/site-section.scss";
+@import "blocks/site-content.scss";
 @import "blocks/logo.scss";
 @import "blocks/btn.scss";
-@import "blocks/main-header.scss";
+@import "blocks/page-header.scss";
 @import "blocks/hero.scss";
 @import "blocks/about.scss";
 @import "blocks/membership.scss";
@@ -17,7 +17,6 @@
 @import "blocks/offers.scss";
 @import "blocks/reviews.scss";
 @import "blocks/review.scss";
-@import "blocks/site-content.scss";
 @import "blocks/user-form.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";

@@ -12650,8 +12650,8 @@ if (typeof module !== 'undefined') {
         a11y: {
           enabled: true,
           notificationClass: 'swiper-notification',
-          prevSlideMessage: 'Previous slide',
-          nextSlideMessage: 'Next slide',
+          prevSlideMessage: 'Назад',
+          nextSlideMessage: 'Вперед',
           firstSlideMessage: 'This is the first slide',
           lastSlideMessage: 'This is the last slide',
           paginationBulletMessage: 'Go to slide {{index}}',

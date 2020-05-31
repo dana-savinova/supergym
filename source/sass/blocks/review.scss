@@ -53,7 +53,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .review {
     width: 566px;
     padding-right: 52px;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .review {
     position: relative;
 

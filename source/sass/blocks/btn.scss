@@ -34,13 +34,13 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .btn {
     width: 184px;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .btn {
     width: 100%;
   }

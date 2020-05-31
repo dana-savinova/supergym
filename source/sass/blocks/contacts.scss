@@ -85,7 +85,7 @@
 }
 
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .contacts {
     width: 100%;
     padding-top: 71px;
@@ -136,7 +136,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .contacts {
     padding: 0;
     padding-top: 71px;

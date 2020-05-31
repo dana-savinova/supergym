@@ -165,7 +165,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media ($desktop-widthpx) {
   .advantages__wrapper {
     width: 1040px;
   }
@@ -222,7 +222,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .advantages {
     padding-top: 100px;
     padding-bottom: 95px;
@@ -301,7 +301,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .advantages {
     padding-top: 55px;
     padding-bottom: 23px;

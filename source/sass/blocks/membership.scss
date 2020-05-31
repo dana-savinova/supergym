@@ -285,7 +285,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .membership {
     padding-top: 100px;
     padding-bottom: 59px;
@@ -339,7 +339,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .membership {
     padding-top: 70px;
     padding-bottom: 33px;

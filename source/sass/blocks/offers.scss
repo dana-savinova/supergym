@@ -182,7 +182,7 @@
   line-height: 1.4em;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-breakpoint) {
   .offers {
     min-width: 768px;
     padding-top: 101px;
@@ -257,7 +257,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .offers {
     min-width: 320px;
     padding-top: 70px;
