@@ -2,10 +2,10 @@
   display: flex;
 }
 
-.logo img {
-  width: 89px;
-  height: 20px;
-}
+// .logo img {
+//   width: 89px;
+//   height: 20px;
+// }
 
 .logo svg {
   width: 89px;
@@ -13,13 +13,23 @@
 }
 
 @media (max-width: $desktop-width) {
-  .logo svg {
+  .logo {
     width: 82px;
     height: 19px;
+  }
+
+  .logo svg {
+    width: 82px;
+    height: 18px;
   }
 }
 
 @media (max-width: $tablet-width) {
+  .logo {
+    width: 68px;
+    height: 15px;
+  }
+
   .logo svg {
     width: 68px;
     height: 15px;
