@@ -5,7 +5,7 @@
   var sliderReviewsBlock = document.querySelector('.reviews__slider');
 
   if (sliderReviewsBlock) {
-    sliderReviewsBlock = new Swiper('.reviews__wrapper', {
+    sliderReviewsBlock = new window.Swiper('.reviews__wrapper', {
       loop: true,
       slidesPerView: 1,
       slidesPerGroup: 1,

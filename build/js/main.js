@@ -44,7 +44,7 @@
   var sliderReviewsBlock = document.querySelector('.reviews__slider');
 
   if (sliderReviewsBlock) {
-    sliderReviewsBlock = new Swiper('.reviews__wrapper', {
+    sliderReviewsBlock = new window.Swiper('.reviews__wrapper', {
       loop: true,
       slidesPerView: 1,
       slidesPerGroup: 1,
@@ -60,11 +60,26 @@
 'use strict';
 
 (function () {
+  var heroBtn = document.querySelector('.hero__btn');
+  var membershipBlock = document.querySelector('.membership');
+  var moveTo = new window.MoveTo();
+
+  if (heroBtn && membershipBlock) {
+    heroBtn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      moveTo.move(membershipBlock);
+    });
+  }
+})();
+
+'use strict';
+
+(function () {
 
   var sliderTrainersBlock = document.querySelector('.trainers__slider');
 
   if (sliderTrainersBlock) {
-    sliderTrainersBlock = new Swiper('.trainers__slider-wrapper', {
+    sliderTrainersBlock = new window.Swiper('.trainers__slider-wrapper', {
       loop: true,
       slidesPerView: 4,
       slidesPerGroup: 4,
