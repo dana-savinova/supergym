@@ -24,6 +24,10 @@
   flex-wrap: wrap;
 }
 
+.main-header__logo {
+  fill: $white;
+}
+
 .main-header__nav {
   display: flex;
 
