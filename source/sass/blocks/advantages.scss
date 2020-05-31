@@ -26,6 +26,8 @@
 
   flex-direction: column;
   align-items: center;
+
+  overflow: hidden;
 }
 
 .advantages__list {
@@ -178,7 +180,15 @@
   }
 
   .advantages__row .advantages__item:first-child {
-    padding-left: 154px;
+    width: 345px;
+  }
+
+  .advantages__item--size {
+    padding-left: 164px;
+  }
+
+  .advantages__item--capacity {
+    padding-left: 157px;
   }
 
   .advantages__item--capacity p {
@@ -187,13 +197,13 @@
 
   .advantages__center {
     position: absolute;
-    top: 8px;
+    top: 50%;
     left: 50%;
 
     width: 240px;
     min-height: 307px;
 
-    transform: translate(-120px);
+    transform: translate(-120px, -49%);
   }
 
   .advantages__row--top .advantages__num {
