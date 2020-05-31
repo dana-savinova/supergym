@@ -19,7 +19,7 @@
   text-transform: uppercase;
 }
 
-@media ($desktop-widthpx) {
+@media (min-width: $desktop-width) {
   .site-content__row {
     background: linear-gradient(to right, $main-blue 0%, $main-blue 50%, $white 50%);
   }

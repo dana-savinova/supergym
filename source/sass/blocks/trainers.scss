@@ -64,7 +64,7 @@
   }
 
   // for resolution from 1200px to 1271px
-  @media (max-width: 1271px) and ($desktop-widthpx) {
+  @media (max-width: 1271px) and (min-width: $desktop-width) {
     &--prev {
       left: -20px;
     }

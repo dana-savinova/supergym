@@ -165,7 +165,7 @@
 }
 
 
-@media ($desktop-widthpx) {
+@media (min-width: $desktop-width) {
   .advantages__wrapper {
     width: 1040px;
   }
