@@ -197,11 +197,17 @@
   }
 
   .page-footer__social {
-    width: 142px;
+    width: 100%;
+
+    justify-content: flex-start;
   }
 
   .page-footer__social li:not(:first-child) {
-    margin-left: 34px;
+    margin-left: 0;
+  }
+
+  .page-footer__social li {
+    margin-right: 34px;
   }
 
   .page-footer__icon--fb {
