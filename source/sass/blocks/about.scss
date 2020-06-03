@@ -265,7 +265,7 @@
     background-image: url("../img/hall-mobile@1x.jpg");
     background-position: center;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (min-width: 325px) {
       background-image: url("../img/hall-mobile@2x.jpg");
     }
   }

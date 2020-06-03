@@ -308,8 +308,8 @@
 
     background-image: url("../img/promo-bg-mobile@1x.jpg");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/promo-bg-mobile@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (min-width: 325px) {
+      background-image: url("../img/promo-bg-mobile@2x.jpg");
     }
   }
 
