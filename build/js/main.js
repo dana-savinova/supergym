@@ -8,7 +8,8 @@
     var allMembershipTabs = Array.prototype.slice.call(membershipTab);
 
     allMembershipTabs.forEach(function (button, n) {
-      function onMembershipBtnClick() {
+      function onMembershipBtnClick(evt) {
+        evt.preventDefault();
         for (var i = 0; i < membershipSlide.length; i++) {
           membershipSlide[i].classList.remove('membership__rates--active');
           allMembershipTabs[i].classList.remove('membership__toggle--active');
