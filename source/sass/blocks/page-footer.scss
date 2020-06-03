@@ -1,6 +1,6 @@
 .page-footer {
   padding-top: 44px;
-  padding-bottom: 44px;
+  padding-bottom: 31px;
 
   color: $white;
   background-color: $footer-bg;
@@ -46,10 +46,6 @@
   margin-right: 30px;
   margin-bottom: 12px;
 }
-
-// .page-footer__logo {
-//   margin-right: 52px;
-// }
 
 .page-footer__link {
   display: flex;
@@ -103,6 +99,10 @@
 }
 
 @media (max-width: $tablet-breakpoint) {
+  .page-footer {
+    padding-bottom: 34px;
+  }
+
   .page-footer__wrapper {
     min-width: 768px;
     padding-right: 45px;
@@ -116,7 +116,6 @@
   }
 
   .page-footer__nav {
-    // width: 83.19%;
     width: 62.2%;
     flex-shrink: 0;
   }
@@ -145,7 +144,7 @@
 @media (max-width: $mobile-breakpoint) {
   .page-footer {
     padding-top: 46px;
-    padding-bottom: 50px;
+    padding-bottom: 38px;
   }
 
   .page-footer__wrapper {
