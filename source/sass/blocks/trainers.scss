@@ -17,14 +17,14 @@
 
 .trainers__slider {
   position: relative;
-
-  width: 100%;
+  width: 84.92%;
   max-width: 1160px;
   margin: 0 auto;
 }
 
 .trainers__slider-wrapper {
-  width: 1160px;
+  width: 100%;
+  max-width: 1160px;
 }
 
 .trainers__wrapper {
@@ -72,22 +72,6 @@
 
   &:active {
     opacity: 0.5;
-  }
-}
-
-@media (max-width: 1271px) and (min-width: $desktop-width) {
-  .trainers__slider-wrapper {
-    width: 1140px;
-  }
-
-  .trainers__btn {
-    &--prev {
-      left: -20px;
-    }
-
-    &--next {
-      right: -20px;
-    }
   }
 }
 
